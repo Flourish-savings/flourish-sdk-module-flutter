@@ -1,4 +1,4 @@
-# flourish_android_flutter
+# flourish_flutter_module
 
 A new Flutter module project.
 

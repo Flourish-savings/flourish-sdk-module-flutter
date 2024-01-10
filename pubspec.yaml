@@ -1,4 +1,4 @@
-name: flourish_android_flutter
+name: flourish_flutter_module
 description: A new Flutter module project.
 
 # The following defines the version and build number for your application.
@@ -86,5 +86,5 @@ flutter:
   # identifiers, which may be completely independent or the same as these.
   module:
     androidX: true
-    androidPackage: com.example.flourish_android_flutter
+    androidPackage: com.example.flourish_flutter_module
     iosBundleIdentifier: com.example.flourishAndroidFlutter
