@@ -1,4 +1,0 @@
-#Wed Jan 10 11:32:13 BRT 2024
-base.0=/Users/rafaelkerr/repo/flourish/flourish_flutter_module/build/host/intermediates/dex/debug/mergeDexDebug/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex

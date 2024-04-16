@@ -73,12 +73,14 @@ class _MyAppState extends State<MyApp> {
             break;
         }
 
-        Flourish flourish = Flourish.initialize(
+        Flourish flourish = Flourish(
           partnerId: jsonObject['partnerId'],
           secret: jsonObject['secret'],
           env: environment,
           language: language,
+          customerCode: jsonObject['customerCode']
         );
+
         debugPrint("Finished flourish sdk initialize method");
 
         debugPrint("Starting flourish sdk authenticate method");
@@ -87,16 +89,8 @@ class _MyAppState extends State<MyApp> {
           _flourish = flourish;
         });
 
-        flourish.authenticate(
-            customerCode: jsonObject['customerCode']
-        ).then((accessToken) {
-          debugPrint("Success Token Received with success: $accessToken");
-          setState(() {
-            isLoading = false;
-          });
-        }
-        ).catchError((er) {
-          debugPrint(er);
+        setState(() {
+          isLoading = false;
         });
 
       }
