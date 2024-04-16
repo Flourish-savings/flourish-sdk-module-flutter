@@ -4,7 +4,12 @@
 .packages
 .pub/
 
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
 .idea/
+
 .vagrant/
 .sconsign.dblite
 .svn/
@@ -48,3 +53,5 @@ app.*.symbols
 
 # Obfuscation related
 app.*.map.json
+
+/build/
